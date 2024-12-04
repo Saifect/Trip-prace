@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="faea5695-ed31-4245-ae2b-442cde018f50" name="Changes" comment="Version 1 (Java) Начальный функционал программы, можно расчитать стоимость поездки, можно ввести константное значение цены бензина, чтобы постоянно его не вводить, все защиты ввода в программе учтены." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Saifect"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Saifect/TripPriceProgramm",
+    "accountId": "96f96139-12b6-4891-8223-668128dced89"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2pf13TEYg1MhiutltT0FV6VcqYL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ConsoleUtils.executor": "Run",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Ilya/IdeaProjects/Price_per_trip",
+    "onboarding.tips.debug.path": "C:/Users/Ilya/IdeaProjects/Price_per_trip/src/Main.java"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="faea5695-ed31-4245-ae2b-442cde018f50" name="Changes" comment="" />
+      <created>1733142116185</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733142116185</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Version 1 (Java) Начальный функционал программы, можно расчитать стоимость поездки, можно ввести константное значение цены бензина, чтобы постоянно его не вводить, все защиты ввода в программе учтены.">
+      <option name="closed" value="true" />
+      <created>1733312360417</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733312360417</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Version 1 (Java) Начальный функционал программы, можно расчитать стоимость поездки, можно ввести константное значение цены бензина, чтобы постоянно его не вводить, все защиты ввода в программе учтены." />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 1 (Java) Начальный функционал программы, можно расчитать стоимость поездки, можно ввести константное значение цены бензина, чтобы постоянно его не вводить, все защиты ввода в программе учтены." />
+  </component>
+</project>
