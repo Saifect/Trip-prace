@@ -12,13 +12,20 @@ public class Main {
             System.out.println("3. Удалить поездку");
             System.out.println("4. Установить константную цену бензина");
             System.out.println("5. Удалить константную цену бензина");
-            System.out.println("6. Выход");
+            System.out.println("6. Показать индекс самой дорогой поездки");
+            System.out.println("7. Показать сводку поездок");
+            System.out.println("8. Выход");
 
-            int choice = safeIntInput(scanner, "Введите целое число: ", true);
+            Integer choice = safeIntInput(scanner, "Введите целое число: ", true);
+            if (choice == null) continue; // Если ввод отменён
+
             switch (choice) {
                 case 1:
                     if (!addNewTrip(scanner, manager)) {
                         System.out.println("Добавление поездки отменено.");
+                    } else {
+                        // Демонстрация использования статического метода и поля
+                        System.out.println("Общее количество созданных поездок: " + Trip.getTripCount());
                     }
                     waitForEnter(scanner);
                     break;
@@ -49,6 +56,26 @@ public class Main {
                     break;
 
                 case 6:
+                    // Демонстрация использования вспомогательного класса для возврата int
+                    Trip[] tripsArray = manager.getTripsArray();
+                    int index = TripHelper.getMostExpensiveTripIndex(tripsArray);
+                    if (index == -1) {
+                        System.out.println("Список поездок пуст.");
+                    } else {
+                        // Выводим индекс с переводом в нумерацию с 1
+                        System.out.println("Индекс самой дорогой поездки (начиная с 1): " + (index + 1));
+                    }
+                    waitForEnter(scanner);
+                    break;
+
+                case 7:
+                    // Демонстрация обработки строк
+                    manager.clearConsole();
+                    manager.showTripsSummary();
+                    waitForEnter(scanner);
+                    break;
+
+                case 8:
                     System.out.println("Выход из программы...");
                     return;
 
@@ -94,22 +121,22 @@ public class Main {
 
     private static void waitForEnter(Scanner scanner) {
         System.out.println("Нажмите Enter для продолжения...");
-        scanner.nextLine(); // Ожидание нажатия Enter
+        scanner.nextLine();
     }
 
     private static Integer safeIntInput(Scanner scanner, String prompt, boolean allowCancel) {
         while (true) {
             System.out.print(prompt);
             if (allowCancel && scanner.hasNext("отмена")) {
-                scanner.nextLine(); // Очистка ввода
+                scanner.nextLine();
                 return null;
             }
             if (scanner.hasNextInt()) {
                 int value = scanner.nextInt();
-                scanner.nextLine(); // Очистка потока после ввода
+                scanner.nextLine();
                 return value;
             } else {
-                scanner.nextLine(); // Очистка некорректного ввода
+                scanner.nextLine();
                 System.out.println("Ошибка ввода. Введите целое число.");
             }
         }
@@ -125,7 +152,7 @@ public class Main {
         Integer index = safeIntInput(scanner, "Введите номер поездки для удаления: ", true);
         if (index == null) return false;
 
-        manager.removeTrip(index); // Вызов removeTrip через manager
+        manager.removeTrip(index);
         return true;
     }
 
@@ -133,15 +160,15 @@ public class Main {
         while (true) {
             System.out.print(prompt);
             if (allowCancel && scanner.hasNext("отмена")) {
-                scanner.nextLine(); // Очистка ввода
+                scanner.nextLine();
                 return null;
             }
             if (scanner.hasNextDouble()) {
                 double value = scanner.nextDouble();
-                scanner.nextLine(); // Очистка потока после ввода
+                scanner.nextLine();
                 return value;
             } else {
-                scanner.nextLine(); // Очистка некорректного ввода
+                scanner.nextLine();
                 System.out.println("Ошибка ввода. Введите число с плавающей точкой.");
             }
         }
